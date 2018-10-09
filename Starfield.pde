@@ -1,7 +1,9 @@
-//your code here
+NormalParticle [] bobbu;
 void setup()
 {
-	//your code here
+	size(500,500);
+	
+	
 }
 void draw()
 {
@@ -9,7 +11,12 @@ void draw()
 }
 class NormalParticle
 {
-	//your code here
+	int myColor;
+	double myX,myY, mySpeed, myAngle;
+	NormalParticle(int v, double x, double y, double z, double w)
+		{
+
+		}
 }
 interface Particle
 {
