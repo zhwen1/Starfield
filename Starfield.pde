@@ -6,7 +6,7 @@ void setup()
   for (int i = 0; i<bobbu.length; i++)
   {
     bobbu[i] = new NormalParticle();
-  }
+  } 
   bobbu[0] = new OddballParticle();
   bobbu[1] = new JumboParticle();
 }
@@ -19,6 +19,16 @@ void draw()
     bobbu[i].show();
     bobbu[i].move();
   }
+}
+
+void mousePressed()
+{  bobbu = new Particle[300];
+  for (int i = 0; i<bobbu.length; i++)
+  {
+    bobbu[i] = new NormalParticle();
+  } 
+  bobbu[0] = new OddballParticle();
+  bobbu[1] = new JumboParticle();
 }
 
 class NormalParticle implements Particle
